@@ -4,16 +4,16 @@
 // console.log(x);
 // x.style.color="red";
 // x.style.fontFamily="gill sans";
-let ele1= document.getElementById("h1");
-ele1.addEventListener("click",function(){
-x.innerHTML="ahmed";
-x.style.color="green";
+var h1= document.getElementById("ele1");
+h1.addEventListener("click",function(){
+h1.innerHTML="ahmed";
+h1.style.color="green";
 },3000
 )
-let ele2=document.getElementById("h2");
-ele1.addEventListener("mousemove",function()  {
-    y.innerHTML="im fine";
-    y.style.color="blue";
+var h2=document.getElementById("ele2");
+h2.addEventListener("mousemove",function()  {
+    h2.innerHTML="im fine";
+    h2.style.color="blue";
 
     
 },4000 );
