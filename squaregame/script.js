@@ -12,9 +12,12 @@ var clr = "red";
 s2.addEventListener("mouseenter", function() {
     if (clr == "green") {
         s2.style.backgroundColor = "yellow";
-        clr = "yellow";
+        clr = "red";
+    } else if (clr == "red") {
+        s2.style.backgroundColor = "red";
+        clr = "blue";
     } else {
-        s2.style.backgroundColor = "green";
+        s2.style.backgroundColor = "blue";
         clr = "green";
     }
 });
@@ -22,25 +25,15 @@ s2.addEventListener("mouseleave", function() {
     s2.style.backgroundColor = "white";
 });
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 var s3 = document.getElementById("sq3");
-s3.addEventListener("mouseenter", function() {
-    var r = Math.floor(Math.random() * 100000);
-    s3.innerHTML = `<h1>${r}</h1>`;
+var s4 = document.getElementById("sq4");
+s4.addEventListener("click", function() {
+    s1.style.backgroundColor = "red";
+    s2.style.backgroundColor = "blue";
+    s3.style.backgroundColor = "green"; 
 });
-s3.addEventListener("mouseleave", function() {
-    s3.innerHTML = "<h1>1</h1>";
+s4.addEventListener("mouseleave", function() {
+    s1.style.backgroundColor = "white";
+    s2.style.backgroundColor = "white";
+    s3.style.backgroundColor = "white"; 
 });
-
