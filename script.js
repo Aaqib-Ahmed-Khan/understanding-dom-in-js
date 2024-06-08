@@ -17,3 +17,8 @@ h2.addEventListener("mousemove",function()  {
 
     
 },4000 );
+var h3=document.getElementById("ele3");
+h2.addEventListener("click",function(){
+    h3.innerhtml="ok shi";
+    h3.style.color="purple";
+});
